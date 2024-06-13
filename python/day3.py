@@ -52,13 +52,13 @@ for i in range(n):
     arr.append(int(input("enter array elements: ")))  
 
 arr.sort()
-small = arr[n-2]
+small = arr[0]
 leargest_f = arr[n-1]
 
-# for j in range(n):
-#     if small < arr[j] and arr[j] < leargest_f:
-#         small = arr[j]
-#         print(small)
+for j in range(n):
+    if small < arr[j] and arr[j] < leargest_f:
+        small = arr[j]
+        # print(small)
 
 print("first leargest: ",leargest_f)
 print("sceond leargest: ",small)
